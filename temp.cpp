@@ -1,12 +1,12 @@
 #include <iostream>
 using namespace std;
 
+int a = 2;
+
 int main()
 {
-    int a;
-    cout << "\nEnter value of a: ";
-    cin >> a;
-    // if a== 1;
-
+    int a = 1;
+    cout << "a inside function is " << a << endl;
+    cout << "a outside function is " << ::a << endl;
     return 0;
 }
