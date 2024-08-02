@@ -1,12 +1,10 @@
 #include <iostream>
 using namespace std;
 
-int a = 2;
-
 int main()
 {
-    int a = 1;
-    cout << "a inside function is " << a << endl;
-    cout << "a outside function is " << ::a << endl;
+    int temp = 1;
+    float temp2 = 3.4;
+    cout << (temp) + temp2;
     return 0;
 }
