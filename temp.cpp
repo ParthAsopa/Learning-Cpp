@@ -3,8 +3,12 @@ using namespace std;
 
 int main()
 {
-    int temp = 1;
-    float temp2 = 3.4;
-    cout << (temp) + temp2;
-    return 0;
+     int x = 1;
+     int &y = x;
+     cout << "This is x " << x << endl
+          << "This is y " << y << endl;
+     x = 3;
+     cout << "This is new x " << x << endl
+          << "This is new y " << y;
+     return 0;
 }
