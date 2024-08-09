@@ -1,14 +1,15 @@
 #include <iostream>
+#include <iomanip>
 using namespace std;
 
 int main()
 {
-     int x = 1;
-     int &y = x;
-     cout << "This is x " << x << endl
-          << "This is y " << y << endl;
-     x = 3;
-     cout << "This is new x " << x << endl
-          << "This is new y " << y;
-     return 0;
+     int a = 2;
+     int b = 33;
+     cout << "This is a without setw: " << a << endl;
+     cout << "This is b without setw: " << b << endl
+          << endl;
+     cout << "This is a with setw: " << setw(2) << a << endl;
+     cout << "This is b with setw: " << setw(2) << b << endl;
+     0;
 }
