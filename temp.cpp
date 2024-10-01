@@ -4,12 +4,19 @@ using namespace std;
 
 int main()
 {
-     int a = 2;
-     int b = 33;
-     cout << "This is a without setw: " << a << endl;
-     cout << "This is b without setw: " << b << endl
-          << endl;
-     cout << "This is a with setw: " << setw(2) << a << endl;
-     cout << "This is b with setw: " << setw(2) << b << endl;
-     0;
+     int a = 6;
+     int b = 3;
+     switch (a+b)
+     {
+     case 4:
+          cout << "a is equal to 4" << endl;
+          break;
+     case 5:
+          cout << "a is equal to 5" << endl;
+          break;
+     default:
+          cout << "a is not equal to any of the given numbers" << endl;
+          break;
+     }
+     return 0;
 }
